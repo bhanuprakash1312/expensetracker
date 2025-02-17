@@ -96,10 +96,11 @@ body{
     }
     .cards{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         width: 95%;
-        gap: 15px;
+        gap: 6px;
     }
     .card{
         background-color:#00ffb7;
@@ -133,5 +134,8 @@ body{
     }
     .recycle{
         width: 17px;
+    }
+    .purse{
+        width: 20px;
     }
 }
