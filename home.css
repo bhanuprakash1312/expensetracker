@@ -1,0 +1,78 @@
+body{
+    font-family: "Comfortaa", serif;
+}
+.parent{
+    position: relative;
+    border: 1px solid black;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.solid-circle{
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background-color: #476ef7;
+    position: absolute;
+    right: -375px;
+    top: -132px;
+    z-index: 1;
+
+}
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    z-index: 2;
+    width: 100%;
+    top: 10px;
+    padding: 0px 35px;
+}
+#click-btn{
+    background-color: white;
+    color: #476ef7;
+    font-size: large;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px black;
+}
+#Name{
+    color: #476ef7;
+    font-size: 150px;
+}
+.form-floating{
+    box-shadow: 0px 5px 5px rgb(0,0,0,0.457);
+    border-radius: 5px
+}
+#login{
+    background-color: #476ef7;
+    color: white;
+    padding: 5px 15px;
+}
+.main-content{
+    margin-left: 35px;
+}
+@media only  screen and (max-width:768px) {
+    .solid-circle{
+        background-color: black;
+        width: 300px;
+        height: 300px;
+        right: -150px;
+        top: -105px;
+    }
+    .header{
+        padding: 0px 10px;
+    }
+    #click-btn{
+        color: black;
+
+    }
+    #Name{
+        font-size: 80px;
+        color: black;
+    }
+    #login{
+        background-color: black;
+    }
+}
